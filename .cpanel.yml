@@ -1,0 +1,17 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/bakentas/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp About_us.html $DEPLOYPATH
+    - /bin/cp About_us_css.css $DEPLOYPATH
+    - /bin/cp Contact.html $DEPLOYPATH
+    - /bin/cp Contact_css.css $DEPLOYPATH
+    - /bin/cp gallery.html $DEPLOYPATH
+    - /bin/cp gallery_style.css $DEPLOYPATH
+    - /bin/cp Home_page_css.css $DEPLOYPATH
+    - /bin/cp Order_guide.html $DEPLOYPATH
+    - /bin/cp Order_guide_css.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp script_2.js $DEPLOYPATH
+    - /bin/cp -R picture $DEPLOYPATH
