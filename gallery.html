@@ -1,0 +1,5530 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>কেক গ্যালারি | বেক অ্যান্ড টেস্ট</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Tiro+Bangla&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="gallery_style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Bake <span>n'</span> Taste</a>
+
+            <!-- Mobile Hamburger Toggle Button -->
+            <button class="menu-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="Order_guide.html">How to Order</a></li>
+                <li><a href="About_us.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+
+            <a href="https://www.facebook.com/share/1DtUwRw7c8/" target="_blank" class="btn-header btn-messenger">
+                <i class="fa-brands fa-facebook-messenger"></i> Message Us
+            </a>
+        </div>
+    </header>
+    <!-- Page Title -->
+    <section class="container page-header">
+        <span class="section-tag">আমাদের দারুণ সব সৃষ্টি</span>
+        <h1>আমাদের ভালোবাসার ঝুলি</h1>
+        <p>আমাদের হাতে গড়া প্রতিটি কেকের নিখুঁত কারুকাজ ও স্বাদের মেলবন্ধন দেখুন। যেকোনো কেক সরাসরি হোয়াটসঅ্যাপে অর্ডার
+            করতে ক্লিক করুন।</p>
+    </section>
+
+    <!-- Controls -->
+    <section class="container">
+        <div class="gallery-controls">
+            <!-- Filter Categories -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterCategory('all', this)">সব কেক</button>
+                <button class="filter-btn" onclick="filterCategory('floral', this)">ফ্লোরাল কেক কালেকশন</button>
+                <button class="filter-btn" onclick="filterCategory('tiered', this)">বিয়ে ও উৎসব</button>
+                <button class="filter-btn" onclick="filterCategory('height', this)">হাইট কেক</button>
+                <button class="filter-btn" onclick="filterCategory('anniversary', this)">অ্যানিভার্সারি</button>
+                <button class="filter-btn" onclick="filterCategory('babyshower', this)">বেবি শাওয়ার থিম</button>
+                <button class="filter-btn" onclick="filterCategory('birthday', this)">বার্থডে কেক</button>
+                <button class="filter-btn" onclick="filterCategory('combo', this)">কম্বো অর্ডার</button>
+            </div>
+
+            <!-- Search Field -->
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="searchInput" onkeyup="searchGallery()" placeholder="আপনার পছন্দের কেক খুঁজুন...">
+            </div>
+        </div>
+
+        <!-- Full Gallery Items Grid -->
+        <div class="gallery-grid" id="galleryGrid">
+<!-- =========================================================
+     ITEM 1
+========================================================= -->
+<div class="gallery-card" data-category="floral">
+
+  <div class="card-img-wrapper">
+   <img class="gallery-img" src="picture/prm_van_2.jpeg" alt="বেগুনি প্রজাপতি">
+</div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,২০০</del>
+                    <span class="price-highlight">৳ ১,১০০</span>
+                </div>
+            </div>
+
+            <button type="button" class="btn-accent" onclick="addToCart(
+                'প্রিমিয়াম ভ্যানিলা কেক - ২ পাউন্ড',
+                1100,
+                'picture/prm_van_2.jpeg'
+            )">
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+            <!-- =========================================================
+     ITEM 2
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/Reg_van_1_2.jpeg" alt="রেগুলার ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        রেগুলার ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৫৫০</del>
+                                <span class="price-highlight">৳ ৫০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক - ১ পাউন্ড',
+                    500,
+                    'picture/Reg_van_1_2.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 3
+========================================================= -->
+            <div class="gallery-card" data-category="floral birthday">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/Reg_van_1_3.jpeg" alt="রেগুলার ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        রেগুলার ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৫৫০</del>
+                                <span class="price-highlight">৳ ৫০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক - ১ পাউন্ড',
+                    500,
+                    'picture/Reg_van_1_3.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 4
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_van_1.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬০০</del>
+                                <span class="price-highlight">৳ ৫৫০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 5
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_van_2_2.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>২ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ১,২০০</del>
+                                <span class="price-highlight">৳ ১,১০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ২ পাউন্ড',
+                    1100,
+                    'picture/prm_van_2_2.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 6
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_van_1_2.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬০০</del>
+                                <span class="price-highlight">৳ ৫৫০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_2.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 7
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_van_1_3.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬০০</del>
+                                <span class="price-highlight">৳ ৫৫০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_3.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 8
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/Reg_van_1.jpeg" alt="রেগুলার ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        রেগুলার ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৫৫০</del>
+                                <span class="price-highlight">৳ ৫০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক - ১ পাউন্ড',
+                    500,
+                    'picture/Reg_van_1.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 9
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/Reg_van_1_5.jpeg" alt="রেগুলার ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        রেগুলার ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৫৫০</del>
+                                <span class="price-highlight">৳ ৫০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক - ১ পাউন্ড',
+                    500,
+                    'picture/Reg_van_1_5.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 10
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/Reg_van_1_6.jpeg" alt="রেগুলার ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        রেগুলার ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৫৫০</del>
+                                <span class="price-highlight">৳ ৫০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক - ১ পাউন্ড',
+                    500,
+                    'picture/Reg_van_1_6.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 11
+========================================================= -->
+            <div class="gallery-card" data-category="floral birthday">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_orng_2.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম অরেঞ্জ কেক (Orange)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>২ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ১,৪০০</del>
+                                <span class="price-highlight">৳ ১,৩০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক - ২ পাউন্ড',
+                    1300,
+                    'picture/prm_orng_2.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 12
+========================================================= -->
+            <div class="gallery-card" data-category="floral birthday">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_orng_2_2.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম অরেঞ্জ কেক (Orange)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>২ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ১,৪০০</del>
+                                <span class="price-highlight">৳ ১,৩০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক - ২ পাউন্ড',
+                    1300,
+                    'picture/prm_orng_2_2.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 13
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_orng_1.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম অরেঞ্জ কেক (Orange)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৭০০</del>
+                                <span class="price-highlight">৳ ৬৫০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_orng_1.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 14
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_chc_1.jpeg" alt="প্রিমিয়াম চকলেট কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম চকলেট কেক (Chocolate)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৭০০</del>
+                                <span class="price-highlight">৳ ৬৫০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক - ১ পাউন্ড',
+                    600,
+                    'picture/prm_chc_1.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- =========================================================
+     ITEM 15
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_pndn_1.jpeg" alt="প্রিমিয়াম পানদান কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম পানদান কেক (Pandan)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬৫০</del>
+                                <span class="price-highlight">৳ ৬০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম পানদান কেক - ১ পাউন্ড',
+                    600,
+                    'picture/prm_pndn_1.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 16 -->
+            <div class="gallery-card" data-category="floral">
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_pndn_1_2.jpeg" alt="প্রিমিয়াম পানদান কেক">
+                </div>
+                <div class="gallery-content">
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+                    <h3 class="gallery-title">প্রিমিয়াম পানদান কেক(Pandan)</h3>
+
+                    <!-- ওজন ব্যাজ -->
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i> ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+                        <!-- প্রাইস সেকশন ও ৫০ টাকা ছাড় ট্যাগ -->
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬৫০</del>
+                                <span class="price-highlight">৳ ৬০০</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/8801000000000?text=হ্যালো!%20আমি%20রেগুলার%20ভ্যানিলা%20কেকটি%20অর্ডার%20করতে%20চাই।"
+                            target="_blank" class="btn-accent">
+                            <i class="fa-brands fa-whatsapp"></i> অর্ডার করুন
+                        </a>
+                    </div>
+                </div>
+            </div>
+           <!-- Item 17 -->
+            <div class="gallery-card" data-category="height birthday">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/hgt_prm_van_2.jpeg" alt="হাইট কেক - প্রিমিয়াম ভ্যানিলা">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">হাইট কেক ও বার্থডে</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা হাইট কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>২.৫ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ১,৫০০</del>
+                                <span class="price-highlight">৳ ১,৪০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা হাইট কেক - ২ পাউন্ড',
+                    1400,
+                    'picture/prm_van_2.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+<!-- =========================================================
+     ITEM 18
+========================================================= -->
+<div class="gallery-card" data-category="height birthday">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির নাম আপনার ফোল্ডারে থাকা ডোরেমন কেকের ছবির নাম অনুযায়ী পরিবর্তন করে নেবেন -->
+        <img src="picture/drmn_hgt_1.jpeg" alt="ডোরেমন থিম হাইট কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">বার্থডে ও হাইট কেক</span>
+
+        <h3 class="gallery-title">
+            ডোরেমন থিম হাইট কেক (Premium Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong> <!-- আপনার প্রয়োজন অনুযায়ী ওজন পরিবর্তন করে নিতে পারেন -->
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪০০</del>
+                    <span class="price-highlight">৳ ১,৩০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'ডোরেমন থিম হাইট কেক (প্রিমিয়াম চকলেট)',
+                    1300,
+                    'picture/drmn_hgt_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 19
+========================================================= -->
+<div class="gallery-card" data-category="anniversary chocolate">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির নাম আপনার ফোল্ডারে থাকা ছবির নাম অনুযায়ী পরিবর্তন করে নেবেন -->
+        <img src="picture/annvrsy_choco_1.jpeg" alt="অ্যানিভার্সারি থিম প্রিমিয়াম চকলেট কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            অ্যানিভার্সারি থিম কেক (Premium Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৮০০</del>
+                    <span class="price-highlight">৳ ৭৩০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'অ্যানিভার্সারি থিম কেক (প্রিমিয়াম চকলেট) - ১ পাউন্ড',
+                    730,
+                    'picture/annvrsy_choco_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 20
+========================================================= -->
+<div class="gallery-card" data-category="height birthday ">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির নাম আপনার ফোল্ডারে থাকা আসল ছবির নাম অনুযায়ী পরিবর্তন করে নেবেন -->
+        <img src="picture/hgt_trd_2.jpeg" alt="২ টিয়ার রসমালাই কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">টিয়ার ও স্পেশাল কেক</span>
+
+        <h3 class="gallery-title">
+            ২ টিয়ার রসমালাই কেক (Rasmalai)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>কাস্টমাইজড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <!-- কাস্টমাইজড চার্জের মেসেজটি এখানে দেওয়া হয়েছে -->
+                <span class="save-tag" style="background-color: #e0f2fe; color: #0369a1;">কাস্টমাইজড চার্জ সহ</span>
+
+                <div class="price-wrapper">
+                    <span class="price-highlight">৳ ২,২০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    '২ টিয়ার রসমালাই কেক (কাস্টোমাইজড চার্জ সহ)',
+                    2200,
+                    'picture/hgt_trd_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 21
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির নাম আপনার ফোল্ডারে থাকা আসল ছবির নাম অনুযায়ী পরিবর্তন করে নেবেন -->
+        <img src="picture/prm_van_1_4.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ও বার্থডে</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_4.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 22
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির নাম আপনার ফোল্ডারে থাকা আসল ছবির নাম অনুযায়ী পরিবর্তন করে নেবেন -->
+        <img src="picture/prm_van_1_5.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ও বার্থডে</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 23
+========================================================= -->
+<div class="gallery-card" data-category="birthday floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/mng_flv_1.jpeg" alt="ম্যাংগো ফ্লেভার কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">স্পেশাল ম্যাংগো</span>
+
+        <h3 class="gallery-title">
+            ম্যাংগো ফ্লেভার কেক (Mango)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৫০</del>
+                    <span class="price-highlight">৳ ৬০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'ম্যাংগো ফ্লেভার কেক - ১ পাউন্ড',
+                    600,
+                    'picture/mng_flv_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 24
+========================================================= -->
+<div class="gallery-card" data-category="babyshower chocolate">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/bby_prm_choco_1.jpeg" alt="বেবি শাওয়ার থিম কেক প্রিমিয়াম চকলেট">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">বেবি শাওয়ার স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            বেবি শাওয়ার থিম কেক (Premium Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১.৫ পাউন্ড</strong> <!-- আপনার প্রয়োজন অনুযায়ী ওজন পরিবর্তন করে নিতে পারেন -->
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,১৫০</del>
+                    <span class="price-highlight">৳ ১,০৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'বেবি শাওয়ার থিম কেক (প্রিমিয়াম চকলেট)',
+                    1050,
+                    'picture/bby_prm_choco_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 25
+========================================================= -->
+<div class="gallery-card" data-category="babyshower chocolate">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/bby_prm_choco.jpeg" alt="বেবি শাওয়ার থিম কেক প্রিমিয়াম চকলেট">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">বেবি শাওয়ার স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            বেবি শাওয়ার থিম কেক (Premium Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>হাফ পাউন্ড (০.৫)</strong> <!-- আপনার প্রয়োজন অনুযায়ী ওজন পরিবর্তন করে নিতে পারেন -->
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৪৫০</del>
+                    <span class="price-highlight">৳ ৪০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'বেবি শাওয়ার থিম কেক (প্রিমিয়াম চকলেট) - হাফ পাউন্ড',
+                    400,
+                    'picture/bby_prm_choco.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 26
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_6.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ও বার্থডে</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (৬ নং ডিজাইন) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_6.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 27
+========================================================= -->
+<div class="gallery-card" data-category="birthday floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার ফোল্ডারে থাকা বাটারস্কচ কেকের আসল ছবির নাম এখানে বসিয়ে নেবেন -->
+        <img src="picture/prm_butterscotch_1.jpeg" alt="প্রিমিয়াম বাটারস্কচ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">স্পেশাল বাটারস্কচ</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম বাটারস্কচ কেক (Butterscotch)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৮০০</del>
+                    <span class="price-highlight">৳ ৭৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম বাটারস্কচ কেক - ১ পাউন্ড',
+                    750,
+                    'picture/prm_butterscotch_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 28
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির ফাইলের নামের শেষে .jpeg যুক্ত করা হয়েছে -->
+        <img src="picture/prm_van_1.5.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ও বার্থডে</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৯০০</del>
+                    <span class="price-highlight">৳ ৮৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১.৫ পাউন্ড',
+                    850,
+                    'picture/prm_van_1.5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 29
+========================================================= -->
+<div class="gallery-card" data-category="chocolate kids floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_2.jpeg" alt="প্রিমিয়াম চকলেট কেক - ফ্লোরাল ও কিডস থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ও কিডস থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭৫০</del>
+                    <span class="price-highlight">৳ ৬৮০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ফ্লোরাল ও কিডস থিম) - ১ পাউন্ড',
+                    680,
+                    'picture/prm_chc_1_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 30
+========================================================= -->
+<div class="gallery-card" data-category="floral chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার ফোল্ডারে থাকা আসল ছবির নাম এখানে বসিয়ে নেবেন -->
+        <img src="picture/reg_chc_2.jpeg" alt="রেগুলার চকলেট কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">রেগুলার কালেকশন</span>
+
+        <h3 class="gallery-title">
+            রেগুলার চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৫০</del>
+                    <span class="price-highlight">৳ ৬০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'রেগুলার চকলেট কেক - ২ পাউন্ড',
+                    600,
+                    'picture/reg_chc_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+            <!-- =========================================================
+     ITEM 31
+========================================================= -->
+            <div class="gallery-card" data-category="floral">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_pndn_1_3.jpeg" alt="প্রিমিয়াম পানদান কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম পানদান কেক (Pandan)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬৫০</del>
+                                <span class="price-highlight">৳ ৬০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম পানদান কেক - ১ পাউন্ড',
+                    600,
+                    'picture/prm_pndn_1_3.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+
+<!-- =========================================================
+     ITEM 31
+========================================================= -->
+<div class="gallery-card" data-category="floral anniversary">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_orng_1_2.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ও বার্থডে</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orgn_1_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 32
+========================================================= -->
+<div class="gallery-card" data-category="chocolate floral height">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_2.jpeg" alt="প্রিমিয়াম চকলেট কেক - অ্যানিভার্সারি স্পেশাল">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৬০০</del>
+                    <span class="price-highlight">৳ ১,৫০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (অ্যানিভার্সারি স্পেশাল) - ২ পাউন্ড',
+                    1500,
+                    'picture/prm_chc_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 33
+========================================================= -->
+<div class="gallery-card" data-category="anniversary floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_3.jpeg" alt="প্রিমিয়াম চকলেট কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">স্পেশাল চকলেট</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭৫০</del>
+                    <span class="price-highlight">৳ ৭০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক - ১ পাউন্ড',
+                    700,
+                    'picture/prm_chc_1_3.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 34
+========================================================= -->
+<div class="gallery-card" data-category="tiered height chocolate floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/hgt_prm_chc.jpeg" alt="প্রিমিয়াম চকলেট ৩ টিয়ার কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">৩ টিয়ার ও হাইট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট ৩ টিয়ার কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>৪ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ২,৮০০</del>
+                    <span class="price-highlight">৳ ২,৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট ৩ টিয়ার কেক - ৩ পাউন্ড',
+                    2650,
+                    'picture/hgt_prm_chc.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 35
+========================================================= -->
+<div class="gallery-card" data-category="kids birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_7.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - কিডস থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">কিডস থিম ও বার্থডে</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭৫০</del>
+                    <span class="price-highlight">৳ ৬৮০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (কিডস থিম) - ১ পাউন্ড',
+                    680,
+                    'picture/prm_van_1_7.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 36
+========================================================= -->
+<div class="gallery-card" data-category="birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_orng_2_3.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক - বার্থডে স্পেশাল">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">বার্থডে স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪৫০</del>
+                    <span class="price-highlight">৳ ১,৩৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (বার্থডে স্পেশাল) - ২ পাউন্ড',
+                    1350,
+                    'picture/prm_orng_2_3.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 37
+========================================================= -->
+<div class="gallery-card" data-category="chocolate floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_4.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_4.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 38
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_orng_1_3.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (ফ্লোরাল ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orng_1_3.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     ITEM 39
+========================================================= -->
+            <div class="gallery-card" data-category="floral tiered">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_van_1_8.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৬০০</del>
+                                <span class="price-highlight">৳ ৫৫০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+<!-- =========================================================
+     ITEM 40
+========================================================= -->
+<div class="gallery-card" data-category="height floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/hgt_prm_orng_1.jpeg" alt="প্রিমিয়াম অরেঞ্জ হাইট কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">হাইট ও ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ হাইট কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৫২০</del>
+                    <span class="price-highlight">৳ ১,৪২০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ হাইট কেক (ফ্লোরাল) - ২ পাউন্ড',
+                    1420,
+                    'picture/hgt_prm_orng_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 41
+========================================================= -->
+<div class="gallery-card" data-category="kids birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_car_cutmsd.jpeg" alt="প্রিমিয়াম ভ্যানিলা কার থিম কাস্টমাইজড কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">কিডস কার থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কার থিম কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,২৫০</del>
+                    <span class="price-highlight">৳ ১,১৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কার থিম কাস্টমাইজড কেক - ১.৫ পাউন্ড',
+                    1150,
+                    'picture/prm_van_car_cutmsd.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 42
+========================================================= -->
+<div class="gallery-card" data-category="floral anniversary">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_2_3.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - সেলিব্রেশন থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">সেলিব্রেশন ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,২০০</del>
+                    <span class="price-highlight">৳ ১,১০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (সেলিব্রেশন থিম) - ২ পাউন্ড',
+                    1100,
+                    'picture/prm_van_2_3.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 43
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday tiered">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_5.jpeg" alt="প্রিমিয়াম চকলেট কেক - প্রিন্সেস থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">প্রিন্সেস থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Princess Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭৫০</del>
+                    <span class="price-highlight">৳ ৬৮০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (প্রিন্সেস থিম) - ১ পাউন্ড',
+                    680,
+                    'picture/prm_chc_1_5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+            <!-- =========================================================
+            ITEM 44
+           ========================================================= -->
+            <div class="gallery-card" data-category="floral birthday">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/prm_van_2_4.jpeg" alt="বেগুনি প্রজাপতি">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>২ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ১,২০০</del>
+                                <span class="price-highlight">৳ ১,১০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ২ পাউন্ড',
+                    1100,
+                    'picture/prm_van_2_4.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+
+<!-- =========================================================
+     ITEM 45
+========================================================= -->
+<div class="gallery-card" data-category="chocolate floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_6.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_4.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 46
+========================================================= -->
+<div class="gallery-card" data-category="floral anniversary">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_orng_1_4.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল অ্যানিভার্সারি</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orgn_1_4.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 47
+========================================================= -->
+<div class="gallery-card" data-category="height kids birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/hgt_prm_van_csmsd.jpeg" alt="প্রিমিয়াম ভ্যানিলা কাস্টমাইজড কেক - ফুটবল থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফুটবল থিম ও হাইট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কাস্টমাইজড কেক (Football Theme)
+        </h3>
+
+       <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৫৫০</del>
+                    <span class="price-highlight">৳ ১,৪৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কাস্টমাইজড (ফুটবল থিম) - ২ পাউন্ড',
+                    1450,
+                    'picture/hgt_prm_van_csmsd.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 48 
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/Reg_van_2.jpeg" alt="রেগুলার ভ্যানিলা কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            রেগুলার ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,১০০</del>
+                    <span class="price-highlight">৳ ১,০০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক (ফ্লোরাল ডিজাইন) - ২ পাউন্ড',
+                    1000,
+                    'picture/Reg_van_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 49
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_9.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - লিলি ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৬০</del>
+                    <span class="price-highlight">৳ ৬১০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (লিলি ফ্লোরাল) - ১ পাউন্ড',
+                    610,
+                    'picture/prm_van_1_9.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 50
+========================================================= -->
+<div class="gallery-card" data-category="chocolate kids birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_csmsd.jpeg" alt="প্রিমিয়াম চকলেট কাস্টমাইজড কেক - ফেয়ারি থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফেয়ারি ও বাটারফ্লাই থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কাস্টমাইজড কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪৫০</del>
+                    <span class="price-highlight">৳ ১,৩৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কাস্টমাইজড কেক (ফেয়ারি থিম) - ২ পাউন্ড',
+                    1350,
+                    'picture/prm_chc_csmsd.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 51
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_7.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_7.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 52
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_8.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_8.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 53
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_9.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_9.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 54
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_10.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_10.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 55
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_2_1.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও চকলেট বার ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>৩ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ২,১০০</del>
+                    <span class="price-highlight">৳ ১,৯৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (চকলেট বার ডিজাইন) - ৩ পাউন্ড',
+                    1950,
+                    'picture/prm_chc_2_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 56
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_1_11.jpeg" alt="প্রিমিয়াম চকলেট কেক - ড্রিপ ও ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট ও ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ড্রিপ ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_11.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 57
+========================================================= -->
+<div class="gallery-card" data-category="floral annivarsary">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_orng_1_5.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল অ্যানিভার্সারি স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (ফ্লোরাল ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orng_1_5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 58
+========================================================= -->
+<div class="gallery-card" data-category="height anniversary floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/hgt_prm_van_2_1.jpeg" alt="প্রিমিয়াম ভ্যানিলা হাইট কেক - অ্যানিভার্সারি স্পেশাল">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি ও হাইট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা হাইট কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪০০</del>
+                    <span class="price-highlight">৳ ১,৩০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা হাইট কেক (অ্যানিভার্সারি স্পেশাল) - ২ পাউন্ড',
+                    1300,
+                    'picture/hgt_prm_van_2_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 59
+========================================================= -->
+<div class="gallery-card" data-category="kids birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_10.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - কার থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">কিডস কার থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Car Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৫০</del>
+                    <span class="price-highlight">৳ ৬০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (কার থিম) - ১ পাউন্ড',
+                    600,
+                    'picture/prm_van_1_10.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 60
+========================================================= -->
+<div class="gallery-card" data-category="height floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/hgt_prm_orng_2.jpeg" alt="প্রিমিয়াম অরেঞ্জ হাইট কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">হাইট ও ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ হাইট কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪৮০</del>
+                    <span class="price-highlight">৳ ১,৩৮০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ হাইট কেক (ফ্লোরাল) - ২ পাউন্ড',
+                    1380,
+                    'picture/hgt_prm_orng_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 61
+========================================================= -->
+<div class="gallery-card" data-category="kids birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_orng_1_6.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক - ফুটবল থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফুটবল থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Football Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (ফুটবল থিম) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orng_1_6.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 62
+========================================================= -->
+<div class="gallery-card" data-category="anniversary">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_11.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - অ্যানিভার্সারি স্পেশাল">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (অ্যানিভার্সারি স্পেশাল) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_11.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 63
+========================================================= -->
+<div class="gallery-card" data-category="anniversary">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_12.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - লাভ থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">লাভ থিম স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>হাফ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৫০০</del>
+                    <span class="price-highlight">৳ ৪৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (লাভ থিম) - হাফ পাউন্ড',
+                    450,
+                    'picture/prm_van_1_12.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 64
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_van_1_13.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফ্লোরাল ডিজাইন) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_13.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 65
+========================================================= -->
+<div class="gallery-card" data-category="chocolate kids floral birthday">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_2_2.jpeg" alt="প্রিমিয়াম চকলেট কেক - প্রিন্সেস ও ফ্লোরাল থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">প্রিন্সেস ও ফ্লোরাল থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,১০০</del>
+                    <span class="price-highlight">৳ ১,০০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (প্রিন্সেস থিম) - ১.৫ পাউন্ড',
+                    1000,
+                    'picture/prm_chc_2_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     ITEM 66
+========================================================= -->
+<div class="gallery-card" data-category="anniversary floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_annvrsy.jpeg" alt="প্রিমিয়াম অ্যানিভার্সারি কেক - ফ্লোরাল ডাবল হার্ট শেপ">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি ও ফ্লোরাল থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অ্যানিভার্সারি কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,২৫০</del>
+                    <span class="price-highlight">৳ ১,১৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অ্যানিভার্সারি কেক (ডাবল হার্ট শেপ) - ১.৫ পাউন্ড',
+                    1150,
+                    'picture/prm_annvrsy.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 67
+========================================================= -->
+<div class="gallery-card" data-category="chocolate anniversary floral">
+
+    <div class="card-img-wrapper">
+        <!-- আপনার দেওয়া ছবির ফাইলের নাম ব্যবহার করা হয়েছে -->
+        <img src="picture/prm_chc_2_3.jpeg" alt="প্রিমিয়াম চকলেট কেক - রোমান্টিক কাপল থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">রোমান্টিক ও অ্যানিভার্সারি থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪৫০</del>
+                    <span class="price-highlight">৳ ১,৩৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (রোমান্টিক থিম) - ২ পাউন্ড',
+                    1350,
+                    'picture/prm_chc_2_3.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 68
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_orng_1_7.jpeg" alt="প্রিমিয়াম অরেঞ্জ কেক - ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Orange)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (ফ্লোরাল ডিজাইন) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orng_1_7.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 69
+========================================================= -->
+<div class="gallery-card" data-category="chocolate floral birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_2_4.jpeg" alt="প্রিমিয়াম চকলেট কেক - গোলাপি ফ্লোরাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪০০</del>
+                    <span class="price-highlight">৳ ১,৩০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (গোলাপি ফ্লোরাল) - ২ পাউন্ড',
+                    1300,
+                    'picture/prm_chc_2_4.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 70
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_van_1_14.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - ফ্লোরাল ও পার্ল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফ্লোরাল ও পার্ল ডিজাইন) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_14.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 71
+========================================================= -->
+<div class="gallery-card" data-category="chocolate kids birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_1_12.jpeg" alt="প্রিমিয়াম চকলেট কেক - স্পাইডার-ম্যান থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">স্পাইডার-ম্যান থিম (কিডস)</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (স্পাইডার-ম্যান থিম) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_12.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 73
+========================================================= -->
+<div class="gallery-card" data-category="floral">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_van_1_15.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - ফ্লোরাল ও গেট টুগেদার থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (গেট টুগেদার থিম) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_15.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 74
+========================================================= -->
+<div class="gallery-card" data-category="chocolate floral birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/butterfly_chc_1.jpeg" alt="প্রিমিয়াম চকলেট কেক - প্রজাপতি থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">প্রজাপতি ও ফ্লোরাল থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪৫০</del>
+                    <span class="price-highlight">৳ ১,৩৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (প্রজাপতি থিম) - ২ পাউন্ড',
+                    1350,
+                    'picture/butterfly_chc_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 75
+========================================================= -->
+<div class="gallery-card" data-category="birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_van_1_16.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ভ্যানিলা স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_16.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 76
+========================================================= -->
+<div class="gallery-card" data-category="floral anniversary">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_van_1_17.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - ফ্লোরাল অ্যানিভার্সারি থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফ্লোরাল অ্যানিভার্সারি) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_17.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 77
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_1_13.jpeg" alt="প্রিমিয়াম চকলেট কেক - চকলেট ড্রিপ ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (চকলেট ড্রিপ) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_13.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 78
+========================================================= -->
+<div class="gallery-card" data-category="chocolate tiered">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_1_14.jpeg" alt="প্রিমিয়াম চকলেট কেক - রমজান মোবারক থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">রমজান স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (রমজান মোবারক থিম) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_14.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 79
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_1_15.jpeg" alt="প্রিমিয়াম চকলেট কেক - ক্লাসিক চকলেট ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ক্লাসিক চকলেট) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_15.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 80
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_1_17.jpeg" alt="প্রিমিয়াম চকলেট কেক - রোসেট ও ড্রিপ ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (রোসেট ও ড্রিপ) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_16.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 81
+========================================================= -->
+<div class="gallery-card" data-category="chocolate">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_chc_1_18.jpeg" alt="প্রিমিয়াম চকলেট কেক - চকলেট ফ্যান ও গোল্ডেন পার্ল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (চকলেট ফ্যান ও ড্রিপ) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_18.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 82
+========================================================= -->
+<div class="gallery-card" data-category="floral tiered">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/prm_van_2_5.jpeg" alt="প্রিমিয়াম ভ্যানিলা কেক - গায়ে হলুদ বা মেহেদি থিম">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">হলুদ/মেহেদি স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,২৫০</del>
+                    <span class="price-highlight">৳ ১,১৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (হলুদ থিম) - ২ পাউন্ড',
+                    1150,
+                    'picture/prm_van_2_5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 83
+========================================================= -->
+<div class="gallery-card" data-category="birthday">
+
+    <div class="card-img-wrapper">
+        <img class="gallery-img" src="picture/rasmalai_cake_1.jpeg" alt="রসমালাই কেক - স্পেশাল ডিজাইন">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">রসমালাই স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            রসমালাই কেক (Rasmalai)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৯০০</del>
+                    <span class="price-highlight">৳ ৮০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'রসমালাই কেক - ১ পাউন্ড',
+                    800,
+                    'picture/rasmalai_cake_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 84
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <!-- ছবির নাম আপনার ফোল্ডারে থাকা নামের সাথে মিলিয়ে নেবেন -->
+        <img src="picture/prm_chc_2_5.jpeg" alt="প্রিমিয়াম চকলেট কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">চকলেট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Chocolate)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১,৪০০</del>
+                    <span class="price-highlight">৳ ১,৩০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক - ২ পাউন্ড',
+                    1300,
+                    'picture/prm_chc_2_5.jpg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     ITEM 85
+========================================================= -->
+<div class="gallery-card" data-category="floral birthday anniversary">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_18.jpeg" alt="প্রিমিয়াম ভ্যানিলা ফ্লোরাল কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফ্লোরাল) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_18.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 86
+========================================================= -->
+<div class="gallery-card" data-category="birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_19.jpeg" alt="প্রিমিয়াম ভ্যানিলা মুন শেপ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">মুন শেপ স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Vanilla)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (মুন শেপ) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_19.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 87
+========================================================= -->
+<div class="gallery-card" data-category="birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_4.jpeg" alt="প্রিমিয়াম ভ্যানিলা ফটো কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফটো প্রিন্ট স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Photo Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>৪ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ২০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ২,৭০০</del>
+                    <span class="price-highlight">৳ ২,৫০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফটো প্রিন্ট) - ৪ পাউন্ড',
+                    2500,
+                    'picture/prm_van_4.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 88
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_chc_1_19.jpeg" alt="প্রিমিয়াম চকলেট মুন ও স্টার কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">মুন ও স্টার স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Moon & Star)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (মুন ও স্টার শেপ) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_19.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 89
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_3.jpeg" alt="প্রিমিয়াম ভ্যানিলা টেডি বিয়ার কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">টেডি বিয়ার থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Teddy Bear)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>৩ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১৭৫০</del>
+                    <span class="price-highlight">৳ ১৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (টেডি বিয়ার) - ৩ পাউন্ড',
+                    1650,
+                    'picture/prm_van_3.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 90
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/Reg_chc_1.jpeg" alt="রেগুলার চকলেট ফ্লোরাল কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল ডিজাইন</span>
+
+        <h3 class="gallery-title">
+            রেগুলার চকলেট কেক (Floral)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৫০</del>
+                    <span class="price-highlight">৳ ৬০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'রেগুলার চকলেট কেক (ফ্লোরাল) - ১ পাউন্ড',
+                    600,
+                    'picture/Reg_chc_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 91
+========================================================= -->
+<div class="gallery-card" data-category="pandan birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_pndn_1.5.jpeg" alt="প্রিমিয়াম পানদান হোয়াইট রোজ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">হোয়াইট রোজ থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম পানদান কেক (White Rose)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১০০০</del>
+                    <span class="price-highlight">৳ ৯০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম পানদান কেক (হোয়াইট রোজ) - ১.৫ পাউন্ড',
+                    900,
+                    'picture/prm_pndn_1.5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 92
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_2_6.jpeg" alt="প্রিমিয়াম ভ্যানিলা ব্লু ক্লাউড কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ব্লু ক্লাউড থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Blue Cloud)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১২০০</del>
+                    <span class="price-highlight">৳ ১১০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ব্লু ক্লাউড) - ২ পাউন্ড',
+                    1100,
+                    'picture/prm_van_2_6.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     ITEM 93
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday tiered">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_21.jpeg" alt="প্রিমিয়াম ভ্যানিলা ডল থিম কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ডল থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Doll Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৫০</del>
+                    <span class="price-highlight">৳ ৫৮০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ডল থিম) - ১ পাউন্ড',
+                    580,
+                    'picture/prm_van_1_21.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     ITEM 94
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_22.jpeg" alt="প্রিমিয়াম ভ্যানিলা ফ্লোরাল প্রিন্সেস কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল প্রিন্সেস থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Floral Princess)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফ্লোরাল প্রিন্সেস) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_22.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 95
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday tiered">
+
+    <div class="card-img-wrapper">
+        <img src="picture/hgt_chc_2.jpeg" alt="প্রিমিয়াম চকলেট সিন্ডারেলা থিম কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">সিন্ডারেলা থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Cinderella Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১৬০০</del>
+                    <span class="price-highlight">৳ ১৫০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (সিন্ডারেলা থিম) - ২ পাউন্ড',
+                    1500,
+                    'picture/hgt_chc_2.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 96
+========================================================= -->
+<div class="gallery-card" data-category="orange birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_orng_1_8.jpeg" alt="প্রিমিয়াম অরেঞ্জ হ্যাপি টাইম কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">হ্যাপি টাইম থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Happy Time)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (হ্যাপি টাইম) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orng_1_8.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 97
+========================================================= -->
+<div class="gallery-card" data-category="vanilla anniversary">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_2.5.jpeg" alt="প্রিমিয়াম ভ্যানিলা অ্যানিভার্সারি কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">অ্যানিভার্সারি স্পেশাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Anniversary)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭৫ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১৪৫০</del>
+                    <span class="price-highlight">৳ ১৩৭৫</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (অ্যানিভার্সারি) - ২.৫ পাউন্ড',
+                    1375,
+                    'picture/prm_van_2.5.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     ITEM 98
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_23.jpeg" alt="প্রিমিয়াম ভ্যানিলা স্পাইডারম্যান থিম কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">স্পাইডারম্যান থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Spiderman)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬৫০</del>
+                    <span class="price-highlight">৳ ৬০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (স্পাইডারম্যান থিম) - ১ পাউন্ড',
+                    600,
+                    'picture/prm_van_1_23.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 99
+========================================================= -->
+<div class="gallery-card" data-category="chocolate birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_chc_1_20.jpeg" alt="প্রিমিয়াম চকলেট ফুটবল থিম কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফুটবল থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম চকলেট কেক (Football Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম চকলেট কেক (ফুটবল থিম) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_chc_1_20.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 100
+========================================================= -->
+<div class="gallery-card" data-category="vanilla special tiered">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_24.jpeg" alt="প্রিমিয়াম ভ্যানিলা মা স্পেশাল মেসেজ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">মা স্পেশাল মেসেজ</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Message Theme)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>০.৫ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৪০০</del>
+                    <span class="price-highlight">৳ ৩৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (মা স্পেশাল মেসেজ) - ০.৫ পাউন্ড',
+                    350,
+                    'picture/prm_van_1_24.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 101
+========================================================= -->
+<div class="gallery-card" data-category="orange birthday floral">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_orng_1_9.jpeg" alt="প্রিমিয়াম অরেঞ্জ ফ্লোরাল রিং কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল রিং থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Floral Ring)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (ফ্লোরাল রিং) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_orng_1_9.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 102
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday floral">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_2_7.jpeg" alt="প্রিমিয়াম ভ্যানিলা ফ্লোরাল রিথ কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল রিথ থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Floral Wreath)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>২ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১০০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১২০০</del>
+                    <span class="price-highlight">৳ ১১০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (ফ্লোরাল রিথ) - ২ পাউন্ড',
+                    1100,
+                    'picture/prm_van_2_7.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 103
+========================================================= -->
+<div class="gallery-card" data-category="orange birthday floral">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_orng_1_10.jpeg" alt="প্রিমিয়াম অরেঞ্জ ফ্লোরাল প্রিন্সেস কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">ফ্লোরাল প্রিন্সেস থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম অরেঞ্জ কেক (Floral Princess)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৭০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭৫০</del>
+                    <span class="price-highlight">৳ ৬৮০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম অরেঞ্জ কেক (ফ্লোরাল প্রিন্সেস) - ১ পাউন্ড',
+                    680,
+                    'picture/prm_orng_1_10.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 104
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_25.jpeg" alt="প্রিমিয়াম ভ্যানিলা পার্পল বাটারফ্লাই কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">পার্পল বাটারফ্লাই থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Purple Butterfly)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৭০০</del>
+                    <span class="price-highlight">৳ ৬৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (পার্পল বাটারফ্লাই) - ১ পাউন্ড',
+                    650,
+                    'picture/prm_van_1_25.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 105
+========================================================= -->
+<div class="gallery-card" data-category="vanilla anniversary">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_26.jpeg" alt="প্রিমিয়াম ভ্যানিলা রেড রিবন অ্যানিভার্সারি কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">রেড রিবন থিম</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Red Ribbon)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (রেড রিবন থিম) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_26.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+<!-- =========================================================
+     ITEM 106
+========================================================= -->
+<div class="gallery-card" data-category="combo">
+
+    <div class="card-img-wrapper">
+        <!-- যেহেতু আপনি এই ছবিটির কোনো শর্ট নেম দেননি, তাই আমি 'combo_pack_1.jpeg' ব্যবহার করেছি। ফোল্ডারের আসল নামের সাথে মিলিয়ে এটি পরিবর্তন করে নিতে পারেন। -->
+        <img src="picture/combo_pack_1.jpeg" alt="৪ ফ্লেভার কম্বো প্যাক কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">৪ ফ্লেভার কম্বো</span>
+
+        <h3 class="gallery-title">
+            ৪ ফ্লেভার কম্বো (Orange, Chocolate, Rasmalai, Pandan)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            ওজন: <strong>৪টি কেক (কম্বো প্যাক)</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ১৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ১৭৫০</del>
+                    <span class="price-highlight">৳ ১৬০০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    '৪ ফ্লেভার কম্বো প্যাক (অরেঞ্জ, চকলেট, রসমালাই, পানদান)',
+                    1600,
+                    'picture/combo_pack_1.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 107
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_27.jpeg" alt="প্রিমিয়াম ভ্যানিলা পার্পল বর্ডার ফ্লোরাল কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">পার্পল বর্ডার ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Purple Border)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (পার্পল বর্ডার ফ্লোরাল) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_27.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+<!-- =========================================================
+     ITEM 108
+========================================================= -->
+<div class="gallery-card" data-category="vanilla birthday">
+
+    <div class="card-img-wrapper">
+        <img src="picture/prm_van_1_28.jpeg" alt="প্রিমিয়াম ভ্যানিলা পার্পল বর্ডার ফ্লোরাল কেক">
+    </div>
+
+    <div class="gallery-content">
+
+        <span class="gallery-badge">পার্পল বর্ডার ফ্লোরাল</span>
+
+        <h3 class="gallery-title">
+            প্রিমিয়াম ভ্যানিলা কেক (Purple Border)
+        </h3>
+
+        <div class="weight-badge">
+            <i class="fa-solid fa-weight-hanging"></i>
+            ওজন: <strong>১ পাউন্ড</strong>
+        </div>
+
+        <div class="gallery-footer">
+
+            <div class="price-container">
+                <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                <div class="price-wrapper">
+                    <del class="old-price">৳ ৬০০</del>
+                    <span class="price-highlight">৳ ৫৫০</span>
+                </div>
+            </div>
+
+            <button
+                type="button"
+                class="btn-accent"
+                onclick="addToCart(
+                    'প্রিমিয়াম ভ্যানিলা কেক (পার্পল বর্ডার ফ্লোরাল) - ১ পাউন্ড',
+                    550,
+                    'picture/prm_van_1_28.jpeg'
+                )"
+            >
+                <i class="fa-solid fa-cart-plus"></i>
+                কার্টে যোগ করুন
+            </button>
+
+        </div>
+    </div>
+</div>
+
+
+            <!-- =========================================================
+     ITEM extra
+========================================================= -->
+            <div class="gallery-card" data-category="">
+
+                <div class="card-img-wrapper">
+                    <img src="picture/Reg_van_1_3.jpeg" alt="রেগুলার ভ্যানিলা কেক">
+                </div>
+
+                <div class="gallery-content">
+
+                    <span class="gallery-badge">ফ্লোরাল কেক কালেকশন</span>
+
+                    <h3 class="gallery-title">
+                        রেগুলার ভ্যানিলা কেক (Vanilla)
+                    </h3>
+
+                    <div class="weight-badge">
+                        <i class="fa-solid fa-weight-hanging"></i>
+                        ওজন: <strong>১ পাউন্ড</strong>
+                    </div>
+
+                    <div class="gallery-footer">
+
+                        <div class="price-container">
+                            <span class="save-tag">৳ ৫০ ছাড়!</span>
+
+                            <div class="price-wrapper">
+                                <del class="old-price">৳ ৫৫০</del>
+                                <span class="price-highlight">৳ ৫০০</span>
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn-accent" onclick="addToCart(
+                    'রেগুলার ভ্যানিলা কেক - ১ পাউন্ড',
+                    500,
+                    'picture/Reg_van_1_3.jpeg'
+                )">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            কার্টে যোগ করুন
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div>
+                <a href="#" class="logo">Bake <span>n'</span> Taste</a>
+                <p style="margin-top: 12px; max-width: 300px;">Custom cakes & desserts, hand-crafted in Gouripur for your sweetest moments.</p>
+            </div>
+            <div>
+                <h4 style="color: var(--primary-dark); margin-bottom: 12px;">Explore</h4>
+               <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Order_guide.html">How to Order</a></li>
+                    <li><a href="about_us.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 style="color: var(--primary-dark); margin-bottom: 12px;">Get in Touch</h4>
+                <p>WhatsApp Inquiry</p>
+                <p>01879369708</p>
+                <p>Gouripur, Bangladesh</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Bake n' Taste. Crafted with love in Gouripur by BIJOY.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Cart Button -->
+    <div id="cartIcon" onclick="toggleCart()"
+        style="position: fixed; bottom: 80px; right: 20px; background: #c46d62; color: #fff; padding: 14px 18px; border-radius: 50px; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); z-index: 1000; display: flex; align-items: center; gap: 8px;">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>কার্ট</span> (<span id="cartCount">0</span>)
+    </div>
+
+    <!-- Cart Modal Drawer -->
+    <div id="cartModal"
+        style="display: none; position: fixed; top: 0; right: 0; width: 320px; height: 100%; background: #fff; box-shadow: -5px 0 25px rgba(0,0,0,0.15); z-index: 1001; padding: 20px; box-sizing: border-box; flex-direction: column; justify-content: space-between;">
+        <div>
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #efe4da; padding-bottom: 10px;">
+                <h3 style="margin: 0; color: #3a2e2b;">আপনার কার্ট</h3>
+                <span onclick="toggleCart()" style="cursor: pointer; font-size: 20px;">✕</span>
+            </div>
+            <div id="cartItems" style="margin-top: 15px; max-height: 60vh; overflow-y: auto;">
+                <p style="color: #888; font-size: 14px;">আপনার কার্ট খালি।</p>
+            </div>
+        </div>
+        <div style="border-top: 1px solid #efe4da; padding-top: 15px;">
+            <h4 style="display: flex; justify-content: space-between; margin: 0 0 15px 0; color: #3a2e2b;">
+                <span>মোট মূল্য:</span> ৳ <span id="cartTotal">0</span>
+            </h4>
+            <button onclick="sendMessengerOrder()" class="btn btn-accent"
+                style="width: 100%; padding: 12px; background: #0084ff; border: none; color: white; border-radius: 8px; font-weight: bold; cursor: pointer;">
+                <i class="fa-brands fa-facebook-messenger"></i> Messenger-এ অর্ডার পাঠান
+            </button>
+        </div>
+    </div>
+    <!-- Image Lightbox Modal -->
+<div id="imageLightbox" class="lightbox-modal" onclick="closeLightbox()">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightboxImg" alt="Enlarged Cake Image">
+</div>
+   <script src="script_2.js?v=5.0"></script>
+</body>
+
+</html>
